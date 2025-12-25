@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>文风测试 - 测测你像哪种狸花猫</title>
+    <meta name="description" content="文风测试，无论输入什么都显示你的文风像狸花猫">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/main.css">
+    <!-- 谷歌统计（保留原网站结构，可删除） -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZQPZX5FS7Y');
+    </script>
+</head>
+
+<header>
+    <nav class="navigation" lang="en">
+        <a href="index.html" style="font-family:OurFont;">测试</a>
+        <a href="query.html" style="font-family:OurFont;">问卷</a>
+        <a href="about.html" style="font-family:OurFont;">关于</a>
+        <a href="qna.html" style="font-family:OurFont;">Q&A</a>
+    </nav>
+</header>
+
+<body class="beautiful-font">
+    <div class="horizontal-flex mobile-column-flex">
+        <div class="spacer"></div>
+        <div class="container">
+            <h1>测测你写得像谁</h1>
+            <h3>请输入200-5000字的中文内容</h3>
+            
+            <form id="AddTaskForm" class="textInput">
+                <label for="str" class="formLabel">输入文本：</label>
+                <textarea id="str" class="formInput" rows="10" placeholder="在此放入文字
+
+-请放心!我们不会储存您的文本，更不会用于AI训练。
+-建议输入200字以上的内容，1000字以上结果更准确，最长输入5000字。
+-目前模型只支持简体中文，如果希望非中文部分也参与决策的话需要自行翻译。
+-诗歌这类没有明显分句符号（。？！）的文体请自行手动添加。" "></textarea>
+                <div id="charCount" class="formError"></div>
+                
+                <div class="spacer"></div>
+                <button type="submit" id="submit" class="button">提交测试</button>
+            </form>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <!-- 引入交互JS -->
+    <script src="static/index.js"></script>
+    <!-- Cloudflare统计（保留原网站结构，可删除） -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"1de3d90834ce4e3a8aad7a19600a6e44","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <p class="footer" style="color:#fff;text-decoration:none;font-family:'OurFont';">
+        结果仅供娱乐，最终解释权归本网站创作者<br>
+        Copyright © 主创团队(testurtext.site) 版权所有 | 
+        <a href="https://www.beian.miit.gov.cn/" style="color:#fff;text-decoration:none;font-family:'OurFont';"> 
+            ICP 备案号: 新ICP备2024010736号
+        </a>
+    </p>
+</footer>
+
+</html>

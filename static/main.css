@@ -1,0 +1,422 @@
+/* 全局基础样式 */
+body {
+    background-image: url(https://lumpbloom7.github.io/Files/TestUrText/starry.webp);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body.beautiful-font {
+    font-family: 'OurFont', 'STSong', sans-serif;
+}
+
+/* 导航栏样式 */
+nav.navigation {
+    display: flex;
+    gap: 1em;
+    margin: 1em;
+}
+
+.navigation a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-color: white;
+    border-style: solid;
+    border-radius: 2em;
+    border-width: medium;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    background: white;
+    border-radius: 1em;
+    width: 100%;
+    max-width: 1200px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    min-height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    /* font-family: 'ChineseFont'; */
+}
+
+.container h1 {
+    font-size: 3rem;
+    font-size: min(8vw, 3rem);
+    font-weight: 500;
+}
+
+.container h3 {
+    font-size: 1.2rem;
+}
+
+/* 表单样式 */
+form.textInput {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    flex: 1;
+    padding: 0 2em;
+}
+
+.formLabel, .formInput, .dropdownInput, .multipleChoice {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    border-width: medium;
+    border-radius: 1em;
+    flex: 0 1 auto;
+}
+
+.formLabel {
+    text-align: justify;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.formError {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    padding: 0;
+    text-align: justify;
+    font-size: 0.8rem;
+    color: red;
+}
+
+.formInput {
+    border-style: solid;
+    flex: 1 1 auto;
+    resize: vertical; /* 允许文本域垂直拉伸 */
+}
+
+.dropdownInput {
+    border-style: solid;
+}
+
+.multipleChoice {
+    text-align: left;
+    border: none;
+}
+
+/* 按钮样式 */
+.button {
+    padding: 0.5em 1em;
+    background: black;
+    font-size: min(3vw, 1.5rem);
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 2em;
+    color: white;
+    margin: 1em;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.button:hover {
+    opacity: 0.8; /* 增加hover效果，提升体验 */
+}
+
+/* 通用布局辅助类 */
+.spacer {
+    flex: 1;
+}
+
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 2em;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.padding {
+    padding: 2em;
+}
+
+.noMarginPadding {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.mobile-column-flex {
+    flex-direction: row;
+}
+
+/* About页面样式 */
+.developer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    margin: 3em;
+    border-style: solid;
+    border-width: 3px;
+    padding: 1em;
+    gap: 0;
+}
+
+.developer-image {
+    flex: 0 0 auto;
+    height: 10em;
+    border-radius: 50%;
+}
+
+.developer-text {
+    flex: 1 1 auto;
+}
+
+.developer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.developer-links h3 {
+    margin-top: 0px;
+}
+
+.developer-logo {
+    background-image: url(../images/bloom/BloomLogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5em;
+}
+
+.developer-details h4, .developer-details p, .developer-name h2 {
+    margin: 0px;
+}
+
+.avatar {
+    width: 100%;
+    max-width: 10em;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.hlfCircle {
+    border-radius: 0 0 50% 50%;
+}
+
+/* Results/Success页面样式 */
+hr {
+    color: black;
+    width: 100%;
+    border: 2px solid black;
+}
+
+@font-face {
+    font-family: 'OurFont';
+    src: url('https://lumpbloom7.github.io/Files/TestUrText/Huiwen_mingchao.woff2') format('woff2');
+}
+
+h1 {
+    font-family: 'OurFont', sans-serif;
+}
+
+.bigText {
+    font-family: 'OurFont';
+    font-size: min(5rem, 10vw);
+    text-align: center; /* 优化固定文本居中显示 */
+    margin: 1em 0;
+}
+
+.bigTextChi {
+    font-family: 'OurFont';
+    font-size: min(5rem, 10vw);
+}
+
+.mediumText {
+    font-family: 'OurFont';
+    font-size: min(7em, 5vw);
+    font-weight: 300;
+    margin-top: 0.1rem; /* 使用相对单位rem更适配不同屏幕 */
+    margin-bottom: 0.1rem;
+}
+
+.medSmallText {
+    font-size: min(1.5em, 2.5vw);
+    font-weight: 300;
+}
+
+.simpleText {
+    font-family: 'PMingLiU', 'STSong', 'NSimSun', sans-serif;
+    font-size: min(1.5em, 2.5vw);
+    font-weight: 300;
+}
+
+.alsoPercentage {
+    float: right;
+}
+
+/* 按钮、分页、表格样式 */
+.searchButton {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #000;
+    border: #000;
+    color: #fff;
+    border-radius: 2em;
+    border-style: solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: #000;
+    color: #000;
+    border-radius: 2em;
+    border-style: solid;
+}
+
+.pagination button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* 问答页面样式 */
+.question {
+    margin: 20px;
+    text-align: justify;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.questionText {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    border-style: solid;
+    border-radius: 1em;
+    flex: 1 1 auto;
+    border-color: black;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-style: solid;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #000;
+    border-color: #000;
+    border-width: thin;
+}
+
+.options input {
+    display: none;
+}
+
+.options input:checked+label {
+    background-color: #000;
+    color: white;
+}
+
+.options label span {
+    display: inline-block;
+}
+
+/* 页脚样式 */
+.footer {
+    text-align: center;
+    font-size: x-small;
+    color: #fff;
+    margin-top: 1em;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 响应式适配 */
+@media only screen and (max-width: 1200px) {
+    .mobile-column-flex {
+        flex-direction: column;
+    }
+
+    .container {
+        min-height: 300px;
+    }
+
+    .developer-image {
+        border-width: 0;
+    }
+
+    /* About页卡片适配 */
+    .cardLeftTop {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 1em;
+    }
+
+    .cardLeftBottom {
+        border-radius: 0;
+    }
+
+    .cardRight {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .aboutCard {
+        max-height: none;
+        height: 100%;
+        width: 100%;
+    }
+}
